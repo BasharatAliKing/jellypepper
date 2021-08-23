@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    background-color:white;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    position: fixed;
+    z-index: 10;
+}
+.header .image img{
+    position: absolute;
+    
+    width:120px;
+    left: 40px;
+    top: 25px;
+}
+.main {
+    height: 100%;
+    margin-top: 60px;
+    padding: 10px 50px;
+}
+.header #sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60%;
+    margin-top: 0px;
+    
+    transform: translateX(-690px);
+    transition: transform 250ms ease-in-out;
+    background: whitesmoke;
+}
+.menu{
+  list-style: none; 
+    margin:0;
+    padding:0;
+}
+.menu img{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#openSidebarMenu:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input#openSidebarMenu{
+    display: none;
+}
+.sidebarIconToggle {
+  height: 22px;
+    width: 30px;
+    position: absolute;
+    color: black;
+    z-index: 99;
+    top: 32px;
+    right: 25px;
+    transition: all 0.3s;
+    cursor: pointer; 
+}
+.spinner {
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+    margin-top: 6px;
+}
+#sidebarMenu .menu img{
+    width: 160px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.menu .btn1{
+         
+    margin-top: 380px;
+    margin-left: 20px;
+    padding: 11px 250px;
+    background-color: #0077ff;
+    border: 2px solid #0077ff;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.menu .btn2{
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 11px 262px;
+    border: 2px solid #0077ff;
+    color:#0077ff;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* home section */
+#home{
+    
+    display: flex;
+    margin-top: 140px;
+    margin-left: 120px;
+   
+}
+#home .a{
+    /*border: 2px solid green;  */
+    width:83%;
+}
+
+    #home h1{
+        font-size: 40px;
+        font-family: 'Balsamiq Sans', cursive;
+        color: #d4eaff;
+    }
+    #home h2{
+        font-size: 40px;
+        font-family: 'Balsamiq Sans', cursive;
+        color : #364a6b;
+        
+    }
+    #home p{
+        font-size: 20px;
+        margin-right: 15px;
+        color: #868a90;
+        font-family: 'Baloo Paaji 2', cursive;
+    }
+    #home .btn1{
+         
+        margin-top: 40px;
+        padding: 13px 50px;
+        background-color: #0077ff;
+        border: 2px solid #0077ff;
+        color: white;
+        border-radius: 10px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    #home .btn2{
+      
+        margin-left: 5px;
+        padding: 13px 50px;
+        border: 2px solid #0077ff;
+        color:#0077ff;
+        border-radius: 10px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+
+
+#home img{
+    margin-left: 30px;
+    margin-top: 100px;
+    width: 75%;
+}
+
+
+/* About Section */
+#about{
+    display: flex;
+    margin-top: 200px;
+  
+}
+#about .a{
+   /* border: 2px solid red;  */
+    width: 50%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 1rem;
+}
+#about .box{
+   
+   /*  border: 2px solid green;  */
+    
+}
+#about .a .box:first-child{
+    
+    grid-column: 2/span 3;
+    grid-row: 1/span 3;
+     
+ }
+
+
+#about .a #box-2 img{
+    margin-left: 130px;
+    height: 300px;
+    width: 280px;
+    box-shadow: 3px 3px whitesmoke;
+}
+#about .a #box-3 img{
+    margin-left: 130px;
+    height: 200px;
+    width: 280px;
+    box-shadow: 3px 3px whitesmoke;
+}
+#about .a #box-1 img{
+    margin-top: 150px;
+    margin-left: 10px;
+    height: 350px;
+    width: 180px;
+    box-shadow: 3px 3px whitesmoke;
+}
+#about .b{
+    margin-left: 200px;
+}
+#about .b h1{
+    font-size: 30px;
+    color: #d4eaff;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#about .b h2{
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-size: 30px;
+    color : #364a6b;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#about .b p{
+    margin-top: 20px;
+    margin-right: 80px;
+    font-size: 18px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#about .b .btn1{
+         
+    margin-top: 40px;
+    padding: 13px 15px;
+    background-color: #0077ff;
+    border: 2px solid #0077ff;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#about .b .btn2{
+  
+    margin-left: 5px;
+    padding: 13px 10px;
+    border: 2px solid #0077ff;
+    color:#0077ff;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#about::before{
+    content: " ";
+    position: absolute;
+    background:url('./j.jpg.png')no-repeat center center/cover;
+    color: blue;
+    width: 40%;
+    height: 140%;
+    left: 0px;
+    top: 750px;
+    z-index: -1;
+    opacity: 0.2;
+}
+.ali{
+    position: absolute;
+    z-index: 1;
+ /*   border: 4px solid yellow; */
+    background-color:#fff;
+    height: 180px;
+    width: 340px;
+    margin-left: 270px;
+    border-radius: 20px;
+    margin-top: 350px;
+    box-shadow: 3px 4px whitesmoke;
+}
+.ali small{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #f8aa00;
+}
+.ali .im {
+    margin-top: 120px;
+    display: flex;
+    margin-left: 25px;
+}
+.ali .im  #img img {
+   width: 20px;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+.ali .im  img {
+   width: 40px;
+   
+}
+.ali .im .gimage{
+   
+    display: flex;
+}
+.million{
+    position: absolute;
+    z-index: 1;
+    
+    display: flex;
+}
+.million h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #364a6b;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.4em;
+    width: 40%;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+.starsarea{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+/* Practice section start here.. */
+#practice{
+    display: flex;
+}
+#practice h1{
+    margin-top: 150px;
+    margin-left: 70px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#practice .btn1{
+    margin-left: 70px;
+    margin-top: 40px;
+    padding: 13px 60px;
+    color: #0077ff;
+    border: 2px solid #0077ff;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 10px;
+}
+#practice  .btn2{
+  
+    margin-left: 10px;
+    padding: 13px 60px;
+    border: 2px solid #0077ff;
+    color:#0077ff;
+    border-radius: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#practice ::before{
+    content: " ";
+    position: absolute;
+    background:url('./g.jpg.png')no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    left: 0px;
+    top: 1450px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#practice ::before{
+    content: " ";
+    position: absolute;
+    background-color: #0077ff;
+    width: 100%;
+    height: 88%;
+    left: 0px;
+    top: 1450px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* peachy section start here */
+#bd {
+    margin-top: 240px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#peachy{
+    display: flex;
+    margin-top: 80px;
+    color: white;
+
+}
+#peachy h2{
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#peachy .a{
+    width: 280px;
+    margin-left: 50px;
+}
+#peachy .a p{
+    margin-top: 15px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+#peachy .b{
+    margin-left: 30px;
+}
+#peachy .b ul li{
+    margin-top: 15px;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+#peachy .b ul li:hover{
+    text-decoration: underline;
+}
+
+#peachy .c{
+    margin-left: 30px;
+}
+#peachy .c ul li{
+    margin-top: 15px;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+#peachy .c ul li:hover{
+    text-decoration: underline;
+}
+#peachy .d{
+    margin-left: 70px;
+}
+#peachy .d ul li{
+    margin-top: 15px;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+#peachy .d ul li:hover{
+    text-decoration: underline;
+}
+#peachy:before{
+    content: " ";
+    position: absolute;
+    background-color:  #1c4677;
+    width: 100%;
+    height: 90%;
+    left: 0px;
+    top: 1912px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#foot .image1 img {
+   
+    position: absolute;
+    left: -70px;
+    top: 1850px;
+    width: 300px;
+    z-index: -1;
+}
+#foot .image2 img {
+   content: " ";
+    position: absolute;
+    left: 100px;
+    top: 2040px;
+    width: 270px;
+    z-index: -1;
+}
+#foot .image3 img {
+   content: " ";
+    position: absolute;
+    left: 630px;
+    top: 2040px;
+    width: 270px;
+    z-index: -1;
+}
+.foot{
+    text-align: center;
+    justify-content: center;
+    margin-top: 35px;
+    color: blue;
+    margin-bottom: 0px;
+}
